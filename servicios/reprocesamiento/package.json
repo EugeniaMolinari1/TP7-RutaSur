@@ -1,0 +1,13 @@
+{
+    "name": "rutasur-reprocesamiento",
+    "version": "1.0.0",
+    "private": true,
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "kafkajs": "^2.2.4",
+        "mongodb": "^6.0.0"
+    }
+}

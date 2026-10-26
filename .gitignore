@@ -1,0 +1,30 @@
+# Dependencias de Node.js
+node_modules/
+**/node_modules/
+
+# Compilaciones
+.next/
+**/.next/
+dist/
+build/
+
+# Variables de entorno locales
+.env
+.env.local
+.env.*.local
+**/.env
+**/.env.local
+**/.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# Archivos temporales
+.DS_Store
+Thumbs.db
+
+# Datos locales de Kafka
+kafka-respaldo/
+revision_bloques_1_y_2.txt
+frontend/AGENTS.md
