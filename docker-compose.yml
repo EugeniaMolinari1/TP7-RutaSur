@@ -5,6 +5,7 @@ services:
     ports:
       - "9092:9094"
     environment:
+      KAFKA_LOG_DIRS: /var/lib/kafka/data
       KAFKA_NODE_ID: 1
       KAFKA_PROCESS_ROLES: broker,controller
       KAFKA_CONTROLLER_QUORUM_VOTERS: 1@localhost:9093
@@ -18,7 +19,7 @@ services:
       KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
       KAFKA_AUTO_CREATE_TOPICS_ENABLE: "false"
     volumes:
-      - kafka_data:/tmp/kafka-logs
+      - kafka_data:/var/lib/kafka/data
     healthcheck:
       test:
         - CMD-SHELL
